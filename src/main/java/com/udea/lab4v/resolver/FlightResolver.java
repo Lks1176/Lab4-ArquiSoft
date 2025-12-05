@@ -1,8 +1,7 @@
-package com.udea.lab4v.controller;
+package com.udea.lab4v.resolver;
 
 import com.udea.lab4v.entity.Flight;
 import com.udea.lab4v.service.FlightService;
-import org.springframework.data.repository.query.Param;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.MutationMapping;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
@@ -12,9 +11,9 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Controller
-public class FlightController {
+public class FlightResolver {
     private FlightService flightService;
-    public FlightController(FlightService flightService) {
+    public FlightResolver(FlightService flightService) {
         this.flightService = flightService;
     }
 

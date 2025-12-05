@@ -1,4 +1,4 @@
-package com.udea.lab4v.controller;
+package com.udea.lab4v.resolver;
 
 import com.udea.lab4v.entity.Reservation;
 import com.udea.lab4v.service.ReservationService;
@@ -7,9 +7,9 @@ import org.springframework.graphql.data.method.annotation.MutationMapping;
 import org.springframework.stereotype.Controller;
 
 @Controller
-public class ReservationController {
+public class ReservationResolver {
     private final ReservationService reservationService;
-    public ReservationController(ReservationService reservationService) {
+    public ReservationResolver(ReservationService reservationService) {
         this.reservationService = reservationService;
     }
 
